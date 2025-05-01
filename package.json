@@ -1,0 +1,35 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"dev": "nodemon backend/server.js",
+		"start": "NODE_ENV=production node backend/server.js",
+		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+		"seed": "node backend/utils/seed.js"
+	},
+	"type": "module",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"cloudinary": "^1.40.0",
+		"cookie-parser": "^1.4.6",
+		"cookie-session": "^2.1.0",
+		"cron": "^3.1.6",
+		"dotenv": "^16.3.1",
+		"express": "^4.18.2",
+		"express-session": "^1.18.1",
+		"jsonwebtoken": "^9.0.1",
+		"mongoose": "^7.4.0",
+		"morgan": "^1.10.0",
+		"passport": "^0.7.0",
+		"passport-google-oauth20": "^2.0.0",
+		"socket.io": "^4.7.2"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.1"
+	}
+}
